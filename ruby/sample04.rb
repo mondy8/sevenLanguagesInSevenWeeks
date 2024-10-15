@@ -1,3 +1,4 @@
+# 2日目　セルフスタディ-2
 # ハッシュを配列に変換
 h = {hoge: 0, fuga:1}
 h.each do |key, item|

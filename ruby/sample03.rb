@@ -1,3 +1,4 @@
+# 2日目　セルフスタディ-1
 # コードブロック
 puts File.open("sample.txt", "r").read
 

@@ -1,3 +1,4 @@
+# 1日目　試してみよう-6
 print "数字を入力してください\n"
 input = gets.to_i
 random = rand(10)
