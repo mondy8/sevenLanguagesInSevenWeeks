@@ -1,0 +1,13 @@
+%セルフスタディ1日目-2
+musician(jimiHendrix, guitar).
+musician(taroHakase, violin).
+musician(joeHisaishi, piano).
+
+genre(rock, guitar).
+genre(classic, violin).
+genre(classic, piano).
+
+musician_genre(X, Y) :- musician(X, Z), genre(Y, Z).
+
+%musician_genre(jimiHendrix, What). => rock
+%musician_genre(What, classic). => taroHakase, joeHisaishi.

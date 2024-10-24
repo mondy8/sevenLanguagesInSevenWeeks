@@ -4,9 +4,36 @@
 
 ## 対象言語
 
-- Ruby
-- Io
-- Prolog
+### Ruby
+
+Homebrew でインストール
+
+```
+$ brew install ruby
+```
+
+ruby コマンドでファイルを実行
+
+```
+ruby sample.rb
+```
+
+### Prolog
+
+Homebrew でインストール（SWI Prolog）
+
+```
+$ brew install swipl
+```
+
+swipl コマンドで実行
+
+```
+swipl sample.pr
+```
+
+halt.で閉じる
+
 - Scala
 - Erlang
 - Clojure

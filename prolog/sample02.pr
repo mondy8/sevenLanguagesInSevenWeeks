@@ -1,0 +1,13 @@
+food_types(katsudon, rice).
+food_types(oyakodon, rice).
+food_types(yakiniku, meat).
+food_types(friedchicken, meat).
+food_types(hotdog, bread).
+
+flavor(tasty, meat).
+flavor(savory, rice).
+flavor(healthy, bread).
+
+food_flavor(X, Y) :- food_types(X, Z), flavor(Y, Z).
+
+%food_types(What, meat).

@@ -1,0 +1,5 @@
+likes(mike, cheese).
+likes(bob, cheese).
+likes(anne, sushi).
+
+friend(X, Y) :- \+(X = Y), likes(X,Z), likes(Y,Z).
