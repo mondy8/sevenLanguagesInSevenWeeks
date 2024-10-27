@@ -1,0 +1,11 @@
+%セルフスタディ2日目-3
+% ソートされたリストYを生成
+sort_list([], []). % 空リストの場合、結果も空リスト
+sort_list([H|T], Y) :-
+    sort_list(T, SortedTail), % 残りの部分Tを再帰的にソート
+    insert(H, SortedTail, Y). % 先頭要素Hをソート済みのリストに挿入
+
+% 要素Xをソート済みリストに挿入
+insert(X, [], [X]). % 空リストの場合、Xがそのまま入る
+insert(X, [H|T], [X,H|T]) :- X =< H. % Xが先頭要素H以下の場合、Xを先頭に挿入
+insert(X, [H|T], [H|NT]) :- X > H, insert(X, T, NT). % XがHより大きい場合、次の位置を探す
